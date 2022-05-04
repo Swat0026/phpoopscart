@@ -1,0 +1,60 @@
+.cart{
+	padding: 0px;
+	background-color: #fff;
+	box-shadow: 0 0px 25px rgba(0, 0, 0, 0.2);
+	display: none;
+	border:  thin solid orange;
+}
+.cart.active{ /* we add this class with php when there are items in the cart.  */
+	display: block;
+}
+
+.cart table{
+	width:  100%;
+	display: block;
+}
+
+.cart table th{
+	padding: 20px 0;
+	background-color: #f4f4f4;
+}
+
+.cart table td{
+	padding: 20px;
+	border:  thin solid #d4d4d4;
+	width: 18%;
+	text-align: center;
+}
+.cart table input[type=text]{
+	width:  50px;
+	padding: 5px;
+	display: block;
+	margin: 10px auto;
+	text-align: center;
+}
+.cart table input[type=submit]{
+	padding: 5px;
+	display: block;
+	width:  100%;
+	margin-top: 10px;
+}
+.cart table img{
+	width:  100%;
+}
+.cart table td.cart-items{
+	font-weight: bold;
+}
+.cart table td.total-price{
+	font-weight: bold;
+	font-size: 22px;
+}
+.cart table a{
+	text-decoration: none;
+	color: darkred;
+	background-color: #ffecef;
+	padding: 10px 15px;
+}
+.cart table a:active{
+	background-color: #ccf4d6;
+	color:  green;
+}
